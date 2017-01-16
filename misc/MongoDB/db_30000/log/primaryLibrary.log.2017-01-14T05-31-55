@@ -1,0 +1,102 @@
+2017-01-13T23:23:05.377-0600 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+2017-01-13T23:23:05.379-0600 I CONTROL  Trying to start Windows service 'MongoDB'
+2017-01-13T23:23:05.381-0600 I STORAGE  Service running
+2017-01-13T23:23:05.381-0600 I CONTROL  [initandlisten] MongoDB starting : pid=13196 port=30000 dbpath=C:/dev/library/misc/MongoDB/db_30000 32-bit host=CTSUSBEN29864
+2017-01-13T23:23:05.381-0600 I CONTROL  [initandlisten] targetMinOS: Windows XP SP3
+2017-01-13T23:23:05.381-0600 I CONTROL  [initandlisten] db version v3.0.12-45-gc6fb291
+2017-01-13T23:23:05.382-0600 I CONTROL  [initandlisten] git version: c6fb2910161af3d7efc474a4d021d27f5b6af748
+2017-01-13T23:23:05.382-0600 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2017-01-13T23:23:05.382-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-01-13T23:23:05.382-0600 I CONTROL  [initandlisten] options: { config: "C:\dev\library\misc\MongoDB\etc\LibraryPrimarydb.cfg", net: { port: 30000 }, replication: { replSet: "Library" }, service: true, storage: { dbPath: "C:/dev/library/misc/MongoDB/db_30000" }, systemLog: { destination: "file", path: "C:/dev/library/misc/MongoDB/db_30000/log/primaryLibrary.log", verbosity: 1 } }
+2017-01-13T23:23:05.391-0600 D COMMAND  [DataFileSync] BackgroundJob starting: DataFileSync
+2017-01-13T23:23:05.434-0600 I CONTROL  [initandlisten] 
+2017-01-13T23:23:05.434-0600 I CONTROL  [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2017-01-13T23:23:05.434-0600 I CONTROL  [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2017-01-13T23:23:05.434-0600 I CONTROL  [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+2017-01-13T23:23:05.434-0600 I CONTROL  [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2017-01-13T23:23:05.434-0600 I CONTROL  [initandlisten] 
+2017-01-13T23:23:05.435-0600 D STORAGE  [initandlisten] enter repairDatabases (to check pdfile version #)
+2017-01-13T23:23:05.435-0600 D STORAGE  [initandlisten] done repairDatabases
+2017-01-13T23:23:05.435-0600 I COMMAND  [initandlisten] query admin.system.roles planSummary: EOF ntoreturn:0 ntoskip:0 nscanned:0 nscannedObjects:0 keyUpdates:0 writeConflicts:0 numYields:0 nreturned:0 reslen:20 locks:{ Global: { acquireCount: { r: 2 } }, MMAPV1Journal: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { R: 1 } } } 0ms
+2017-01-13T23:23:05.436-0600 D INDEX    [initandlisten] checking complete
+2017-01-13T23:23:05.436-0600 I INDEX    [initandlisten] allocating new ns file C:/dev/library/misc/MongoDB/db_30000\local.ns, filling with zeroes...
+2017-01-13T23:23:05.870-0600 I STORAGE  [FileAllocator] allocating new datafile C:/dev/library/misc/MongoDB/db_30000\local.0, filling with zeroes...
+2017-01-13T23:23:05.870-0600 I STORAGE  [FileAllocator] creating directory C:/dev/library/misc/MongoDB/db_30000\_tmp
+2017-01-13T23:23:06.384-0600 I STORAGE  [FileAllocator] done allocating datafile C:/dev/library/misc/MongoDB/db_30000\local.0, size: 64MB,  took 0.511 secs
+2017-01-13T23:23:06.385-0600 D STORAGE  [initandlisten] allocating new extent
+2017-01-13T23:23:06.385-0600 D STORAGE  [initandlisten] MmapV1ExtentManager::allocateExtent desiredSize:4096 fromFreeList: 0 eloc: 0:4000
+2017-01-13T23:23:06.386-0600 D STORAGE  [initandlisten] local.system.indexes: clearing plan cache - collection info cache reset
+2017-01-13T23:23:06.387-0600 D STORAGE  [initandlisten] local.system.namespaces: clearing plan cache - collection info cache reset
+2017-01-13T23:23:06.387-0600 D STORAGE  [initandlisten] MmapV1ExtentManager::allocateExtent desiredSize:8192 fromFreeList: 0 eloc: 0:5000
+2017-01-13T23:23:06.387-0600 D STORAGE  [initandlisten] local.me: clearing plan cache - collection info cache reset
+2017-01-13T23:23:06.387-0600 D STORAGE  [initandlisten] allocating new extent
+2017-01-13T23:23:06.387-0600 D STORAGE  [initandlisten] MmapV1ExtentManager::allocateExtent desiredSize:8192 fromFreeList: 0 eloc: 0:7000
+2017-01-13T23:23:06.387-0600 D STORAGE  [initandlisten] allocating new extent
+2017-01-13T23:23:06.387-0600 D STORAGE  [initandlisten] MmapV1ExtentManager::allocateExtent desiredSize:131072 fromFreeList: 0 eloc: 0:9000
+2017-01-13T23:23:06.388-0600 D STORAGE  [initandlisten] local.me: clearing plan cache - collection info cache reset
+2017-01-13T23:23:06.388-0600 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2017-01-13T23:23:06.388-0600 D STORAGE  [initandlisten] create collection local.startup_log { capped: true, size: 10485760 }
+2017-01-13T23:23:06.389-0600 D STORAGE  [initandlisten] MmapV1ExtentManager::allocateExtent desiredSize:10485760 fromFreeList: 0 eloc: 0:29000
+2017-01-13T23:23:06.389-0600 D STORAGE  [initandlisten] local.startup_log: clearing plan cache - collection info cache reset
+2017-01-13T23:23:06.389-0600 D STORAGE  [initandlisten] allocating new extent
+2017-01-13T23:23:06.389-0600 D STORAGE  [initandlisten] MmapV1ExtentManager::allocateExtent desiredSize:131072 fromFreeList: 0 eloc: 0:a29000
+2017-01-13T23:23:06.389-0600 D STORAGE  [initandlisten] local.startup_log: clearing plan cache - collection info cache reset
+2017-01-13T23:23:06.390-0600 D COMMAND  [ClientCursorMonitor] BackgroundJob starting: ClientCursorMonitor
+2017-01-13T23:23:06.390-0600 I NETWORK  [initandlisten] waiting for connections on port 30000
+2017-01-13T23:23:06.391-0600 D COMMAND  [TTLMonitor] BackgroundJob starting: TTLMonitor
+2017-01-13T23:23:06.391-0600 D COMMAND  [PeriodicTaskRunner] BackgroundJob starting: PeriodicTaskRunner
+2017-01-13T23:23:06.392-0600 D REPL     [ReplExecNetThread-0] thread starting
+2017-01-13T23:23:48.741-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53311 #1 (1 connection now open)
+2017-01-13T23:23:48.744-0600 I COMMAND  [conn1] command admin.$cmd command: whatsmyuri { whatsmyuri: 1 } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:62 locks:{} 0ms
+2017-01-13T23:23:48.792-0600 I COMMAND  [conn1] command admin.$cmd command: getLog { getLog: "startupWarnings" } keyUpdates:0 writeConflicts:0 numYields:0 reslen:707 locks:{} 0ms
+2017-01-13T23:23:48.850-0600 I COMMAND  [conn1] command admin.$cmd command: replSetGetStatus { replSetGetStatus: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:154 locks:{} 0ms
+2017-01-13T23:23:48.852-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:24:01.664-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:24:03.131-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:24:05.497-0600 I STORAGE  [DataFileSync] flushing mmaps took 105ms  for 2 files
+2017-01-13T23:24:08.016-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { listDatabases: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:87 locks:{} 0ms
+2017-01-13T23:24:08.056-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:24:22.849-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:24:26.672-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { listDatabases: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:87 locks:{} 0ms
+2017-01-13T23:24:26.730-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:25:05.397-0600 I STORAGE  [DataFileSync] flushing mmaps took 5ms  for 2 files
+2017-01-13T23:25:06.757-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:25:09.249-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { listDatabases: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:87 locks:{} 0ms
+2017-01-13T23:25:09.316-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:26:05.398-0600 I STORAGE  [DataFileSync] flushing mmaps took 5ms  for 2 files
+2017-01-13T23:26:51.521-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:03.740-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:05.411-0600 I STORAGE  [DataFileSync] flushing mmaps took 16ms  for 2 files
+2017-01-13T23:27:17.844-0600 I COMMAND  [conn1] command admin.$cmd command: replSetGetStatus { replSetGetStatus: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:154 locks:{} 0ms
+2017-01-13T23:27:17.846-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:25.720-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:30.967-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 1ms
+2017-01-13T23:27:31.760-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:32.832-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:33.000-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:33.139-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:34.232-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:49.861-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:27:55.058-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:28:01.483-0600 I COMMAND  [conn1] command admin.$cmd command: replSetGetStatus { replSetGetStatus: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:154 locks:{} 0ms
+2017-01-13T23:28:01.484-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:28:05.437-0600 I STORAGE  [DataFileSync] flushing mmaps took 42ms  for 2 files
+2017-01-13T23:28:10.245-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:28:14.863-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { listDatabases: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:87 locks:{} 0ms
+2017-01-13T23:28:14.866-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:29:05.449-0600 I STORAGE  [DataFileSync] flushing mmaps took 53ms  for 2 files
+2017-01-13T23:29:53.548-0600 I COMMAND  [conn1] command test.$cmd command: isMaster { isMaster: 1.0, forShell: 1.0 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:256 locks:{} 0ms
+2017-01-13T23:29:54.812-0600 I NETWORK  [conn1] end connection 127.0.0.1:53311 (0 connections now open)
+2017-01-13T23:30:05.450-0600 I STORAGE  [DataFileSync] flushing mmaps took 54ms  for 2 files
+2017-01-13T23:30:59.070-0600 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-01-13T23:30:59.072-0600 D REPL     [ReplExecNetThread-0] thread shutting down
+2017-01-13T23:30:59.072-0600 I CONTROL  [serviceStopWorker] now exiting
+2017-01-13T23:30:59.072-0600 I NETWORK  [serviceStopWorker] shutdown: going to close listening sockets...
+2017-01-13T23:30:59.072-0600 I NETWORK  [serviceStopWorker] closing listening socket: 412
+2017-01-13T23:30:59.072-0600 I NETWORK  [serviceStopWorker] shutdown: going to flush diaglog...
+2017-01-13T23:30:59.072-0600 I NETWORK  [serviceStopWorker] shutdown: going to close sockets...
+2017-01-13T23:30:59.073-0600 I STORAGE  [serviceStopWorker] shutdown: waiting for fs preallocator...
+2017-01-13T23:30:59.073-0600 I STORAGE  [serviceStopWorker] shutdown: closing all files...
+2017-01-13T23:30:59.074-0600 I STORAGE  [serviceStopWorker] closeAllFiles() finished
+2017-01-13T23:30:59.074-0600 I STORAGE  [serviceStopWorker] shutdown: removing fs lock...
+2017-01-13T23:30:59.075-0600 I CONTROL  [serviceStopWorker] dbexit:  rc: 49
