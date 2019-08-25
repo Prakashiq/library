@@ -4,3 +4,4 @@
     Libary prod
 ##REST SERVICe
 REST
+LOGGER
